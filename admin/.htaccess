@@ -1,0 +1,4 @@
+AuthName "Admin only"
+AuthType Basic
+AuthUserFile C:\MAMP\htdocs\project2/bakers/admin/.htpasswd
+Require valid-user
