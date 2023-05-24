@@ -142,7 +142,7 @@ $log = "Login";
 						</div>
 					</div>
 				</div>	
-				<img class="about-img" data-wow-delay="0.4s" src="img/diyimages/bannana-bread.jpg" alt="banana bread">
+				<img class="about-img" data-wow-delay="0.4s" src="img/diyimages/bannana-bread.jpg" alt="banana bread" width="500" height="400">
 			</section>
 			<!-- End home-about Area -->
 

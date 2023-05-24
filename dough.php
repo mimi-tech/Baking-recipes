@@ -17,17 +17,16 @@ $p = $page * $rowsperpage;
 $sql = "SELECT * FROM dough LIMIT ".$p.", ".$rowsperpage;
 $run_query = mysqli_query($conn,$sql);
  while($row = mysqli_fetch_array($run_query)):
-					$ingredient = mysqli_real_escape_string($conn,$row['ingredient']);
-					$direction = mysqli_real_escape_string($conn,$row['direction']);
-					$nutrition = mysqli_real_escape_string($conn,$row['nutrition']);
-					
-					$ingredient = htmlentities($row['ingredient'], ENT_QUOTES, "UTF-8");
-					$direction = htmlentities($row['direction'], ENT_QUOTES, "UTF-8");
-					$nutrition = htmlentities($row['nutrition'], ENT_QUOTES, "UTF-8");
-					
-					$ingredient = str_replace("\r\n","<li>", $ingredient);
-					$direction = str_replace("\r\n","<br />", $direction);
-					$nutrition = str_replace("\r\n","<li>", $nutrition);
+$ingredient = mysqli_real_escape_string($conn,$row['ingredient']);
+$direction = mysqli_real_escape_string($conn,$row['direction']);
+$nutrition = mysqli_real_escape_string($conn,$row['nutrition']);	
+$ingredient = htmlentities($row['ingredient'], ENT_QUOTES, "UTF-8");
+$direction = htmlentities($row['direction'], ENT_QUOTES, "UTF-8");
+$nutrition = htmlentities($row['nutrition'], ENT_QUOTES, "UTF-8");
+
+$ingredient = str_replace("\r\n","<li>", $ingredient);
+$direction = str_replace("\r\n","<br />", $direction);
+$nutrition = str_replace("\r\n","<li>", $nutrition);
 
 
 
